@@ -2,7 +2,14 @@
 name = "fibonacci"
 version = "0.1.0"
 edition = "2021"
+authors = ["gdim47 gdim47@protonmail.com"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "fibonacci"
+path = "src/main.rs"
+
+[lib]
+name = "fib"
+path = "src/lib.rs"
 
 [dependencies]
