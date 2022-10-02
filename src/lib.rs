@@ -4,7 +4,7 @@ pub mod fib {
         return match n {
             0 => 1,
             _ => ((GoldenRatio.powi(n as i32) - (1. - GoldenRatio).powi(n as i32))
-                    / 5.0_f64.sqrt()) as u64
+                    / 5.0_f64.sqrt()).round() as u64
         }
     }
 }
